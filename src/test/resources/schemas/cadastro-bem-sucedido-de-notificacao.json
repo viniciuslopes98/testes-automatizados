@@ -1,0 +1,96 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1730418641.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "morador",
+    "mensagem",
+    "dataEnvio",
+    "lida"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        1
+      ],
+      "default": 0
+    },
+    "morador": {
+      "$id": "#root/morador",
+      "title": "Morador",
+      "type": "object",
+      "required": [
+        "id",
+        "nome",
+        "email"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/morador/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "default": 0
+        },
+        "nome": {
+          "$id": "#root/morador/nome",
+          "title": "Nome",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Ana Maria"
+          ],
+          "pattern": "^.*$"
+        },
+        "email": {
+          "$id": "#root/morador/email",
+          "title": "Email",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "ana.marias@ssggmail.com"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "mensagem": {
+      "$id": "#root/mensagem",
+      "title": "Mensagem",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "opa"
+      ],
+      "pattern": "^.*$"
+    },
+    "dataEnvio": {
+      "$id": "#root/dataEnvio",
+      "title": "Dataenvio",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2024-05-24T14:30:00"
+      ],
+      "pattern": "^.*$"
+    },
+    "lida": {
+      "$id": "#root/lida",
+      "title": "Lida",
+      "type": "boolean",
+      "examples": [
+        true
+      ],
+      "default": true
+    }
+  }
+}

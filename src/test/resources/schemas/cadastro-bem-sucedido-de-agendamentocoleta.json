@@ -1,0 +1,140 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1730412900.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "caminhao",
+    "tipoResiduos",
+    "dataAgendamento",
+    "horario",
+    "endereco",
+    "confirmado"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        3
+      ],
+      "default": 0
+    },
+    "caminhao": {
+      "$id": "#root/caminhao",
+      "title": "Caminhao",
+      "type": "object",
+      "required": [
+        "id",
+        "placa",
+        "motorista",
+        "status",
+        "ultimaAtualizacao"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/caminhao/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            1
+          ],
+          "default": 0
+        },
+        "placa": {
+          "$id": "#root/caminhao/placa",
+          "title": "Placa",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "DUR4535"
+          ],
+          "pattern": "^.*$"
+        },
+        "motorista": {
+          "$id": "#root/caminhao/motorista",
+          "title": "Motorista",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Joao da silva"
+          ],
+          "pattern": "^.*$"
+        },
+        "status": {
+          "$id": "#root/caminhao/status",
+          "title": "Status",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "ativo"
+          ],
+          "pattern": "^.*$"
+        },
+        "ultimaAtualizacao": {
+          "$id": "#root/caminhao/ultimaAtualizacao",
+          "title": "Ultimaatualizacao",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "2024-08-22T12:32:00"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "tipoResiduos": {
+      "$id": "#root/tipoResiduos",
+      "title": "Tiporesiduos",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Comum"
+      ],
+      "pattern": "^.*$"
+    },
+    "dataAgendamento": {
+      "$id": "#root/dataAgendamento",
+      "title": "Dataagendamento",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2024-06-22"
+      ],
+      "pattern": "^.*$"
+    },
+    "horario": {
+      "$id": "#root/horario",
+      "title": "Horario",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "14:30"
+      ],
+      "pattern": "^.*$"
+    },
+    "endereco": {
+      "$id": "#root/endereco",
+      "title": "Endereco",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Av. Costa Eduardo, 267 SAO PAULO-SP"
+      ],
+      "pattern": "^.*$"
+    },
+    "confirmado": {
+      "$id": "#root/confirmado",
+      "title": "Confirmado",
+      "type": "boolean",
+      "examples": [
+        true
+      ],
+      "default": true
+    }
+  }
+}
